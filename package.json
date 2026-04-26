@@ -1,0 +1,10 @@
+{
+  "name": "ai-project-tappz",
+  "private": true,
+  "scripts": {
+    "ingest": "pnpm -C ai-backend run ingest",
+    "evaluate": "pnpm -C ai-backend run evaluate",
+    "dev:backend": "pnpm -C ai-backend run start:dev",
+    "dev:frontend": "pnpm -C ai-frontend run dev"
+  }
+}

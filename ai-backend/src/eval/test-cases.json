@@ -1,0 +1,122 @@
+[
+  {
+    "label": "Backpropagation — core concept",
+    "question": "What is backpropagation and how does it work?",
+    "expectToolCall": true,
+    "expectedKeywords": ["gradient", "neural", "weight", "loss"],
+    "minKeywordHitRate": 0.5,
+    "category": "simple-factual"
+  },
+  {
+    "label": "Transformer architecture",
+    "question": "Explain the transformer architecture in machine learning.",
+    "expectToolCall": true,
+    "expectedKeywords": ["attention", "encoder", "decoder", "self-attention"],
+    "minKeywordHitRate": 0.5,
+    "category": "simple-factual"
+  },
+  {
+    "label": "Geoffrey Hinton — researcher biography",
+    "question": "What are Geoffrey Hinton's contributions to deep learning?",
+    "expectToolCall": true,
+    "expectedKeywords": ["deep learning", "neural", "Hinton"],
+    "minKeywordHitRate": 0.67,
+    "category": "simple-factual"
+  },
+  {
+    "label": "CUDA — hardware context",
+    "question": "What is CUDA and why is it important for AI training?",
+    "expectToolCall": true,
+    "expectedKeywords": ["GPU", "parallel", "NVIDIA"],
+    "minKeywordHitRate": 0.5,
+    "category": "simple-factual"
+  },
+  {
+    "label": "Gradient descent — optimisation",
+    "question": "How does gradient descent optimise a neural network?",
+    "expectToolCall": true,
+    "expectedKeywords": ["gradient", "learning rate", "loss", "parameter"],
+    "minKeywordHitRate": 0.5,
+    "category": "simple-factual"
+  },
+  {
+    "label": "ChatGPT — model knowledge",
+    "question": "When was ChatGPT released and who made it?",
+    "expectToolCall": true,
+    "expectedKeywords": ["OpenAI", "2022"],
+    "minKeywordHitRate": 0.5,
+    "category": "simple-factual"
+  },
+  {
+    "label": "Multi-doc — Hinton and backpropagation",
+    "question": "How did Geoffrey Hinton contribute to the development of backpropagation?",
+    "expectToolCall": true,
+    "expectedKeywords": ["Hinton", "backpropagation", "neural"],
+    "minKeywordHitRate": 0.67,
+    "category": "multi-document"
+  },
+  {
+    "label": "Multi-doc — Transformers vs RNNs",
+    "question": "Compare transformers and recurrent neural networks for sequence modelling.",
+    "expectToolCall": true,
+    "expectedKeywords": ["attention", "recurrent", "sequence", "parallel"],
+    "minKeywordHitRate": 0.5,
+    "category": "multi-document"
+  },
+  {
+    "label": "Follow-up — Turing Award year",
+    "question": "What year did he win the Turing Award?",
+    "conversation": [
+      { "role": "user", "content": "Tell me about Geoffrey Hinton." },
+      { "role": "assistant", "content": "Geoffrey Hinton is a pioneer of deep learning and neural networks [1]." }
+    ],
+    "expectToolCall": true,
+    "expectedKeywords": ["Hinton", "2018"],
+    "minKeywordHitRate": 0.5,
+    "category": "follow-up"
+  },
+  {
+    "label": "Follow-up — elaborate on attention",
+    "question": "Can you explain self-attention in more detail?",
+    "conversation": [
+      { "role": "user", "content": "What is the transformer architecture?" },
+      { "role": "assistant", "content": "The transformer is a neural network architecture based on self-attention mechanisms [1]." }
+    ],
+    "expectToolCall": true,
+    "expectedKeywords": ["attention", "query", "key", "value"],
+    "minKeywordHitRate": 0.5,
+    "category": "follow-up"
+  },
+  {
+    "label": "Out-of-scope — cooking recipe",
+    "question": "What is the best recipe for chocolate chip cookies?",
+    "expectToolCall": true,
+    "expectedKeywords": ["sufficient information", "knowledge base"],
+    "minKeywordHitRate": 0.5,
+    "category": "out-of-scope"
+  },
+  {
+    "label": "Out-of-scope — sports trivia",
+    "question": "Who won the 2022 FIFA World Cup?",
+    "expectToolCall": true,
+    "expectedKeywords": ["sufficient information", "knowledge base"],
+    "minKeywordHitRate": 0.5,
+    "category": "out-of-scope"
+  },
+  {
+    "label": "No-search — conversational",
+    "question": "Thanks, that was a really clear explanation!",
+    "expectToolCall": false,
+    "expectedKeywords": [],
+    "minKeywordHitRate": 0,
+    "category": "conversational"
+  },
+  {
+    "label": "No-search — rephrase request",
+    "question": "Can you summarise what you just told me in two sentences?",
+    "expectToolCall": false,
+    "expectedKeywords": [],
+    "minKeywordHitRate": 0,
+    "category": "conversational"
+  }
+]
